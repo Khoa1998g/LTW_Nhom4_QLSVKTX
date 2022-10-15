@@ -27,22 +27,35 @@ namespace QuanLyKTX
         {
             string email = txtEmail.Text;
             string password = txtPassword.Text;
-            if (login(email, password)==1)
+            try
             {
-                FrmAdmin f = new FrmAdmin();
-                this.Hide();
-                f.ShowDialog();
+                if (login(email, password) == 1)
+                {
+                    FrmAdmin f = new FrmAdmin();
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else if (login(email, password) == 0)
+                {
+                    frmSinhVien f = new frmSinhVien(email);
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu", "Mời nhập lại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else if(login(email, password) == 0)
+            catch 
             {
-                frmSinhVien f = new frmSinhVien(email);
-                this.Hide();
-                f.ShowDialog();
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu", "Mời nhập lại", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu","Mời nhập lại" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
+           
+        }
+        bool isValidMail (string email)
+        {
+            return AccountDAO.Instance.IsValidMail(email);
         }
         int login(string email, string password) 
         { 
@@ -62,6 +75,8 @@ namespace QuanLyKTX
 
         private void lblVaoDangKi_Click(object sender, EventArgs e)
         {
+            txtEmail.Clear();
+            txtPassword.Clear();
             frmRegister f = new frmRegister();
             this.Hide();
             f.ShowDialog();
@@ -70,7 +85,33 @@ namespace QuanLyKTX
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            
+        }
+        private void txtEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                if (isValidMail(txtEmail.Text.Trim()))
+                {
+                    errorProvider1.Clear();
+                }
+                else
+                {
+                    errorProvider1.SetError(txtEmail, "Email Không Hợp Lệ!");
+                    MessageBox.Show("Email sai định dạng", "Cần nhập lại email");
+                }
+            }
+        }
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (isValidMail(txtEmail.Text.Trim()))
+            {
+                errorProvider1.Clear();
+            }
+            else
+            {
+                errorProvider1.SetError(txtEmail, "Email Không Hợp Lệ!");
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKTX.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using QuanLyKTX.DAO;
 
 namespace QuanLyKTX
 {
@@ -156,11 +156,6 @@ namespace QuanLyKTX
         private void btnDangXuat_Leave(object sender, EventArgs e)
         {
             btnDangXuat.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace QuanLyKTX.DAO
@@ -19,6 +20,34 @@ namespace QuanLyKTX.DAO
         }
         private AccountDAO() { }
 
+        public bool IsValidMail(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+                return false;
+            string sMailPattern = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
+            return Regex.IsMatch(email.Trim(), sMailPattern);
+        }
+        public bool IsValidVietNamPhoneNumber(string phoneNum)
+        {
+            if (string.IsNullOrEmpty(phoneNum))
+                return false;
+            string sMailPattern = @"^((09(\d){8})|(086(\d){7})|(088(\d){7})|(089(\d){7})|(01(\d){9}))$";
+            return Regex.IsMatch(phoneNum.Trim(), sMailPattern);
+        }
+        public bool IsValidPassword(string password)
+        {
+            if (string.IsNullOrEmpty(password))
+                return false;
+            string pattern = @"((?=.*[0-9])(?=.*[a-z]).{6,20})";
+            return Regex.IsMatch(password.Trim(), pattern);
+        }
+        public bool IsValidID(string maSV)
+        {
+            if (string.IsNullOrEmpty(maSV))
+                return false;
+            string pattern = @"[0-9]{10}";
+            return Regex.IsMatch(maSV.Trim(), pattern);
+        }
         public int login(string email, string password)
         {
             string query = "USP_LOGIN @email , @passWord";
@@ -49,5 +78,6 @@ namespace QuanLyKTX.DAO
             data = dataProvider.Instance.ExecuteQuery(query);
             return data;
         }
+
     }
 }

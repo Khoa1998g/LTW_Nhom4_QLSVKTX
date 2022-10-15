@@ -22,7 +22,7 @@ namespace QuanLyKTX.DAO
 
         
 
-        public DataTable ExecuteQuery(string query, object[] parameter = null)
+        public DataTable ExecuteQuery(string query, object[] parameter = null) //trả về 1 table sql
         {
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionSTR)) //kết nối tới sever sql          
@@ -48,7 +48,7 @@ namespace QuanLyKTX.DAO
             }
             return data;
         }
-        public int ExecuteNonQuery(string query, object[] parameter = null)
+        public int ExecuteNonQuery(string query, object[] parameter = null) //trả về số dòng được thực thi
         {
             int data = 0;
             using (SqlConnection connection = new SqlConnection(connectionSTR)) //kết nối tới sever sql          

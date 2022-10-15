@@ -30,20 +30,19 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNative = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.lblTile = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.pnlFormLoad = new System.Windows.Forms.Panel();
             this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnThongBao = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnThongTinLuuTru = new System.Windows.Forms.Button();
             this.btnThongTinSV = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.picUserName = new System.Windows.Forms.PictureBox();
+            this.lblTile = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pnlFormLoad = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserName)).BeginInit();
@@ -75,91 +74,6 @@
             this.pnlNative.Name = "pnlNative";
             this.pnlNative.Size = new System.Drawing.Size(4, 200);
             this.pnlNative.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblEmail);
-            this.panel2.Controls.Add(this.lblUserName);
-            this.panel2.Controls.Add(this.picUserName);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 200);
-            this.panel2.TabIndex = 0;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblEmail.Location = new System.Drawing.Point(14, 150);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(212, 24);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Some User Text Here";
-            // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblUserName.Location = new System.Drawing.Point(12, 106);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(160, 31);
-            this.lblUserName.TabIndex = 1;
-            this.lblUserName.Text = "User Name";
-            this.lblUserName.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblTile
-            // 
-            this.lblTile.AutoSize = true;
-            this.lblTile.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblTile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblTile.Location = new System.Drawing.Point(288, 14);
-            this.lblTile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTile.Name = "lblTile";
-            this.lblTile.Size = new System.Drawing.Size(309, 64);
-            this.lblTile.TabIndex = 1;
-            this.lblTile.Text = "Dashboard";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("Arial", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtSearch.Location = new System.Drawing.Point(1022, 40);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(476, 36);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.Text = "Search something here...";
-            // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1556, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(50, 50);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // pnlFormLoad
-            // 
-            this.pnlFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFormLoad.Location = new System.Drawing.Point(270, 118);
-            this.pnlFormLoad.Name = "pnlFormLoad";
-            this.pnlFormLoad.Size = new System.Drawing.Size(1334, 800);
-            this.pnlFormLoad.TabIndex = 4;
             // 
             // btnHoaDon
             // 
@@ -282,6 +196,43 @@
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             this.btnTrangChu.Leave += new System.EventHandler(this.btnTrangChu_Leave);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lblEmail);
+            this.panel2.Controls.Add(this.lblUserName);
+            this.panel2.Controls.Add(this.picUserName);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(270, 200);
+            this.panel2.TabIndex = 0;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblEmail.Location = new System.Drawing.Point(14, 150);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(212, 24);
+            this.lblEmail.TabIndex = 2;
+            this.lblEmail.Text = "Some User Text Here";
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblUserName.Location = new System.Drawing.Point(12, 106);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(160, 31);
+            this.lblUserName.TabIndex = 1;
+            this.lblUserName.Text = "User Name";
+            this.lblUserName.Click += new System.EventHandler(this.label1_Click);
+            // 
             // picUserName
             // 
             this.picUserName.Image = global::QuanLyKTX.Properties.Resources.schoolboy_at_a_desk__v2;
@@ -293,6 +244,40 @@
             this.picUserName.TabIndex = 0;
             this.picUserName.TabStop = false;
             // 
+            // lblTile
+            // 
+            this.lblTile.AutoSize = true;
+            this.lblTile.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblTile.Location = new System.Drawing.Point(288, 14);
+            this.lblTile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTile.Name = "lblTile";
+            this.lblTile.Size = new System.Drawing.Size(309, 64);
+            this.lblTile.TabIndex = 1;
+            this.lblTile.Text = "Dashboard";
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1556, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(50, 50);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pnlFormLoad
+            // 
+            this.pnlFormLoad.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlFormLoad.Location = new System.Drawing.Point(270, 118);
+            this.pnlFormLoad.Name = "pnlFormLoad";
+            this.pnlFormLoad.Size = new System.Drawing.Size(1334, 800);
+            this.pnlFormLoad.TabIndex = 4;
+            // 
             // frmSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -301,7 +286,6 @@
             this.ClientSize = new System.Drawing.Size(1604, 918);
             this.Controls.Add(this.pnlFormLoad);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblTile);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -335,7 +319,6 @@
         private System.Windows.Forms.Button btnThongBao;
         private System.Windows.Forms.Panel pnlNative;
         private System.Windows.Forms.Label lblTile;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel pnlFormLoad;
     }

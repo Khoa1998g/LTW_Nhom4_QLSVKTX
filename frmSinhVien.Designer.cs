@@ -30,15 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNative = new System.Windows.Forms.Panel();
-            this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnThongBao = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnThongTinLuuTru = new System.Windows.Forms.Button();
             this.btnThongTinSV = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblMaSV = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.picUserName = new System.Windows.Forms.PictureBox();
             this.lblTile = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -52,7 +51,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.pnlNative);
-            this.panel1.Controls.Add(this.btnHoaDon);
             this.panel1.Controls.Add(this.btnThongBao);
             this.panel1.Controls.Add(this.btnDangXuat);
             this.panel1.Controls.Add(this.btnThongTinLuuTru);
@@ -74,26 +72,6 @@
             this.pnlNative.Name = "pnlNative";
             this.pnlNative.Size = new System.Drawing.Size(4, 200);
             this.pnlNative.TabIndex = 1;
-            // 
-            // btnHoaDon
-            // 
-            this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDon.Font = new System.Drawing.Font("Arial", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnHoaDon.Image = global::QuanLyKTX.Properties.Resources.bill;
-            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnHoaDon.Location = new System.Drawing.Point(0, 536);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(270, 84);
-            this.btnHoaDon.TabIndex = 1;
-            this.btnHoaDon.Text = "  Hoá Đơn/Biên Lai";
-            this.btnHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHoaDon.UseVisualStyleBackColor = true;
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
-            this.btnHoaDon.Leave += new System.EventHandler(this.btnHoaDon_Leave);
             // 
             // btnThongBao
             // 
@@ -141,14 +119,14 @@
             this.btnThongTinLuuTru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongTinLuuTru.Font = new System.Drawing.Font("Arial", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThongTinLuuTru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnThongTinLuuTru.Image = global::QuanLyKTX.Properties.Resources.home_blue;
+            this.btnThongTinLuuTru.Image = global::QuanLyKTX.Properties.Resources.contract1;
             this.btnThongTinLuuTru.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnThongTinLuuTru.Location = new System.Drawing.Point(0, 368);
             this.btnThongTinLuuTru.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongTinLuuTru.Name = "btnThongTinLuuTru";
             this.btnThongTinLuuTru.Size = new System.Drawing.Size(270, 84);
             this.btnThongTinLuuTru.TabIndex = 1;
-            this.btnThongTinLuuTru.Text = "  Thông Tin Lưu trú";
+            this.btnThongTinLuuTru.Text = "  Hợp Đồng";
             this.btnThongTinLuuTru.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongTinLuuTru.UseVisualStyleBackColor = true;
             this.btnThongTinLuuTru.Click += new System.EventHandler(this.btnThongTinLuuTru_Click);
@@ -198,8 +176,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.lblEmail);
-            this.panel2.Controls.Add(this.lblUserName);
+            this.panel2.Controls.Add(this.lblMaSV);
+            this.panel2.Controls.Add(this.lblName);
             this.panel2.Controls.Add(this.picUserName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -208,30 +186,30 @@
             this.panel2.Size = new System.Drawing.Size(270, 200);
             this.panel2.TabIndex = 0;
             // 
-            // lblEmail
+            // lblMaSV
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblEmail.Location = new System.Drawing.Point(14, 150);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(212, 24);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Some User Text Here";
+            this.lblMaSV.AutoSize = true;
+            this.lblMaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaSV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblMaSV.Location = new System.Drawing.Point(14, 150);
+            this.lblMaSV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMaSV.Name = "lblMaSV";
+            this.lblMaSV.Size = new System.Drawing.Size(212, 24);
+            this.lblMaSV.TabIndex = 2;
+            this.lblMaSV.Text = "Some User Text Here";
             // 
-            // lblUserName
+            // lblName
             // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblUserName.Location = new System.Drawing.Point(12, 106);
-            this.lblUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(160, 31);
-            this.lblUserName.TabIndex = 1;
-            this.lblUserName.Text = "User Name";
-            this.lblUserName.Click += new System.EventHandler(this.label1_Click);
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblName.Location = new System.Drawing.Point(12, 106);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(90, 31);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name";
+            this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
             // picUserName
             // 
@@ -309,10 +287,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox picUserName;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblMaSV;
         private System.Windows.Forms.Button btnTrangChu;
-        private System.Windows.Forms.Button btnHoaDon;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button btnThongTinLuuTru;
         private System.Windows.Forms.Button btnThongTinSV;

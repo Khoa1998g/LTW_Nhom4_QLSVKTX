@@ -42,5 +42,15 @@ namespace QuanLyKTX.DAO
             }
             return phongs;
         }
+        public string getPhongByMaHD(string maHD)  //Thành công trả về số Phong, thất bại trả về ""
+        {
+            DataTable data = dataProvider.Instance.ExecuteQuery("select b.sophong, b.sluongsv, b.tinhtrangphong from hopdong a, phong b where a.sophong = b.sophong and  mahopdong = '" + maHD + "'");
+            if (data.Rows.Count > 0)
+            {
+                Phong phong = new Phong(data.Rows[0]);
+                return phong.soPhong;
+            }
+            return "";
+        }
     }
 }

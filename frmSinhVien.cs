@@ -35,10 +35,10 @@ namespace QuanLyKTX
             fTrangChu.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoad.Controls.Add(fTrangChu);
             fTrangChu.Show();
-            lblEmail.Text = email;
-            lblUserName.Text = AccountDAO.Instance.getInfo(email).Rows[0][5].ToString();
-           
-        }
+            lblMaSV.Text = AccountDAO.Instance.getInfo(email).Rows[0][3].ToString();
+            lblName.Text = AccountDAO.Instance.getInfo(email).Rows[0][5].ToString();
+
+    }
 
         private void frmSinhVien_Load(object sender, EventArgs e)
         {
@@ -67,8 +67,9 @@ namespace QuanLyKTX
             btnThongTinSV.BackColor = Color.FromArgb(46, 51, 73);
 
             lblTile.Text = "Thông tin sinh viên";
+            string id = lblMaSV.Text.Trim();
             this.pnlFormLoad.Controls.Clear();
-            frmTTSV fTTSV = new frmTTSV() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmTTSV fTTSV = new frmTTSV(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             fTTSV.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoad.Controls.Add(fTTSV);
             fTTSV.Show();
@@ -83,7 +84,8 @@ namespace QuanLyKTX
 
             lblTile.Text = "Thông tin lưu trú";
             this.pnlFormLoad.Controls.Clear();
-            frmTTLuuTru fTTLuuTru = new frmTTLuuTru() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            string id = lblMaSV.Text.Trim();
+            frmTTLuuTru fTTLuuTru = new frmTTLuuTru(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             fTTLuuTru.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoad.Controls.Add(fTTLuuTru);
             fTTLuuTru.Show();
@@ -98,26 +100,12 @@ namespace QuanLyKTX
 
             lblTile.Text = "Thông báo";
             this.pnlFormLoad.Controls.Clear();
-            frmThongBao fThongBao = new frmThongBao() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmThongBao_Admin fThongBao = new frmThongBao_Admin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             fThongBao.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoad.Controls.Add(fThongBao);
             fThongBao.Show();
         }
 
-        private void btnHoaDon_Click(object sender, EventArgs e)
-        {
-            pnlNative.Height = btnHoaDon.Height;
-            pnlNative.Top = btnHoaDon.Top;
-            pnlNative.RightToLeft = btnHoaDon.RightToLeft;
-            btnHoaDon.BackColor = Color.FromArgb(46, 51, 73);
-
-            lblTile.Text = "Hoá đơn";
-            this.pnlFormLoad.Controls.Clear();
-            frmHoaDon fHoaDon = new frmHoaDon() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            fHoaDon.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoad.Controls.Add(fHoaDon);
-            fHoaDon.Show();
-        }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
@@ -146,11 +134,6 @@ namespace QuanLyKTX
         private void btnThongBao_Leave(object sender, EventArgs e)
         {
             btnThongBao.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
-        private void btnHoaDon_Leave(object sender, EventArgs e)
-        {
-            btnHoaDon.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnDangXuat_Leave(object sender, EventArgs e)

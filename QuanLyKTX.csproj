@@ -109,17 +109,14 @@
     <Compile Include="DAO\HopDong.cs" />
     <Compile Include="DAO\HopDongDAO.cs" />
     <Compile Include="DAO\PhongDAO.cs" />
+    <Compile Include="DAO\reportSinhVien.cs" />
+    <Compile Include="DAO\reportSinhVienDAO.cs" />
+    <Compile Include="DAO\SinhVienDAO.cs" />
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAdmin.Designer.cs">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmHoaDon.Designer.cs">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQuanLyPhong.cs">
       <SubType>Form</SubType>
@@ -132,12 +129,6 @@
     </Compile>
     <Compile Include="frmQuanLySV.Designer.cs">
       <DependentUpon>frmQuanLySV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmThongBao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongBao.Designer.cs">
-      <DependentUpon>frmThongBao.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThongBao_Admin.cs">
       <SubType>Form</SubType>
@@ -195,22 +186,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLKTXDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SinhVien.cs" />
+    <Compile Include="DAO\SinhVien.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHoaDon.resx">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyPhong.resx">
       <DependentUpon>frmQuanLyPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLySV.resx">
       <DependentUpon>frmQuanLySV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThongBao.resx">
-      <DependentUpon>frmThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongBao_Admin.resx">
       <DependentUpon>frmThongBao_Admin.cs</DependentUpon>
@@ -252,6 +237,7 @@
     <None Include="Properties\DataSources\QuanLyKTX.DAO.dataProvider.datasource" />
     <None Include="Properties\DataSources\QuanLyKTX.DAO.Phong.datasource" />
     <None Include="Properties\DataSources\QuanLyKTX.DAO.PhongDAO.datasource" />
+    <None Include="Properties\DataSources\QuanLyKTX.DAO.reportSinhVien.datasource" />
     <None Include="Properties\DataSources\SinhVien.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -279,6 +265,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\contract.png" />
+    <Content Include="Images\frog.jpg" />
+    <None Include="Resources\KTX.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

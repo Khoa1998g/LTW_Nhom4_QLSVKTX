@@ -17,8 +17,6 @@ D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmRegister.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmLogin.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.FrmAdmin.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmTrangChu.resources
-D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmHoaDon.resources
-D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmThongBao.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmTTLuuTru.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmTTSV.resources
 D:\Khoa\QuanLyKTX\obj\Debug\QuanLyKTX.frmQuanLySV.resources
@@ -138,10 +136,8 @@ D:\Git\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Git\obj\Debug\QuanLyKTX.csproj.AssemblyReference.cache
 D:\Git\obj\Debug\QuanLyKTX.csproj.SuggestedBindingRedirects.cache
 D:\Git\obj\Debug\QuanLyKTX.FrmAdmin.resources
-D:\Git\obj\Debug\QuanLyKTX.frmHoaDon.resources
 D:\Git\obj\Debug\QuanLyKTX.frmQuanLyPhong.resources
 D:\Git\obj\Debug\QuanLyKTX.frmQuanLySV.resources
-D:\Git\obj\Debug\QuanLyKTX.frmThongBao.resources
 D:\Git\obj\Debug\QuanLyKTX.frmThongBao_Admin.resources
 D:\Git\obj\Debug\QuanLyKTX.frmThongKe.resources
 D:\Git\obj\Debug\QuanLyKTX.frmTTLuuTru.resources

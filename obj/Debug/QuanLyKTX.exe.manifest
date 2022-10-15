@@ -606,14 +606,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuanLyKTX.exe" size="176040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QuanLyKTX.exe" size="315816">
       <assemblyIdentity name="QuanLyKTX" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Kl+wrWfsSv7enkDFqeq/4Vwdp/+MGkDfQj1fnIzW8Ow=</dsig:DigestValue>
+        <dsig:DigestValue>yIU786hsK6mXkjfj4evyjfXsCEi8jwjpMJYqdKS115s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -629,6 +629,24 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Images\contract.png" size="1325">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t8uFXNGYjM5WCqXBFYPuLD5W5mignFRg/VsxBJ61mJQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\frog.jpg" size="91103">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SRBmQwkszHH0Ywv7J2EXkQIFEjbwpv3bR1YQE+hyeiA=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\schoolboy-at-a-desk--v2.png" size="6511">
     <hash>
       <dsig:Transforms>

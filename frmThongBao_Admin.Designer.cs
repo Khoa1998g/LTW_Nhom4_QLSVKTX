@@ -30,18 +30,19 @@
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblLienHe = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.lblLienHe);
-            this.panel4.Location = new System.Drawing.Point(123, 72);
+            this.panel4.Location = new System.Drawing.Point(23, 13);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1088, 657);
+            this.panel4.Size = new System.Drawing.Size(1283, 774);
             this.panel4.TabIndex = 11;
             // 
             // textBox1
@@ -50,24 +51,22 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(72, 137);
+            this.textBox1.Location = new System.Drawing.Point(27, 76);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(772, 353);
+            this.textBox1.Size = new System.Drawing.Size(505, 149);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "    Thông báo kí túc xá ";
+            this.textBox1.Text = "    \r\n\r\n    Đây chỉ là một thông báo ở kí túc xá ";
             // 
-            // lblLienHe
+            // pictureBox1
             // 
-            this.lblLienHe.AutoSize = true;
-            this.lblLienHe.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblLienHe.ForeColor = System.Drawing.Color.White;
-            this.lblLienHe.Location = new System.Drawing.Point(26, 16);
-            this.lblLienHe.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLienHe.Name = "lblLienHe";
-            this.lblLienHe.Size = new System.Drawing.Size(242, 42);
-            this.lblLienHe.TabIndex = 0;
-            this.lblLienHe.Text = "THÔNG BÁO";
+            this.pictureBox1.Image = global::QuanLyKTX.Properties.Resources.frog;
+            this.pictureBox1.Location = new System.Drawing.Point(816, 353);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(464, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // frmThongBao_Admin
             // 
@@ -81,6 +80,7 @@
             this.Text = "frmThongBao_Admin";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,6 +89,6 @@
 
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblLienHe;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -13,7 +13,7 @@ namespace QuanLyKTX
     public partial class frmThongBao_Admin : Form
     {
         public frmThongBao_Admin()
-        {
+        {           
             InitializeComponent();
         }
     }
